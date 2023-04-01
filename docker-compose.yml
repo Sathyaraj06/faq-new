@@ -6,7 +6,7 @@ services:
     image: rasa-faq:latest
     build: ./Dockerfiles/faq
     ports:
-      - "5005:5005"
+      - "5006:5006"
     networks:
       - code-network
     restart: always
