@@ -3,5 +3,5 @@ version: "2.0"
 rules:
 - rule: respond to chitchat
   steps:
-  - intent: chitchat
-  - action: utter_chitchat
+  - intent: chitchat/bot_aboutyou
+  - action: utter_chitchat/bot_aboutyou
