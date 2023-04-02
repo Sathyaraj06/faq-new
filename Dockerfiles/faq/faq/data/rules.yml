@@ -1,7 +1,14 @@
-version: "2.0"
+version: "3.1"
 
 rules:
 - rule: respond to chitchat
   steps:
-  - intent: chitchat/bot_aboutyou
-  - action: utter_chitchat/bot_aboutyou
+  - intent: bot_aboutyou
+  - action: utter_aboutyou
+
+
+- rule: respond to age
+  steps:
+  - intent: bot_age
+  - action: utter_age
+
