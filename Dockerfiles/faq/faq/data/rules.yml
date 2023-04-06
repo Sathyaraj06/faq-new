@@ -3,12 +3,13 @@ version: "3.1"
 rules:
 - rule: respond to chitchat
   steps:
-  - intent: bot_aboutyou
-  - action: utter_aboutyou
+  - intent: chitchat
+  - action: utter_chitchat
 
-
-- rule: respond to age
+- rule: Say 'I am a bot' anytime the user challenges
   steps:
-  - intent: bot_age
-  - action: utter_age
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
 
