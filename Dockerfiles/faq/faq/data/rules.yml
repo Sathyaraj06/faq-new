@@ -4,12 +4,12 @@ rules:
 - rule: respond to chitchat
   steps:
   - intent: chitchat
-  - action: utter_chitchat
+  - action: action_common
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: respond to faq
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - intent: faq
+  - action: action_common 
 
 
 
