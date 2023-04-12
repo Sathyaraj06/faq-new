@@ -17,4 +17,4 @@ RUN rasa train
 # CMD sh -c 'if [ "$shell_mode" = false ]; then rasa run -p 5006 --cors "*"; else rasa shell -p 5006; fi'
 
 
-CMD sh -c 'if [ "$shell_mode" = false ]; then rasa run --enable-api --log-file rasa.log --debug -p 5006 --cors "*"; else rasa shell -p 5006; fi'
+CMD sh -c 'if [ "$shell_mode" = false ]; then rasa run --enable-api --log-file rasa.log --debug -p 5006 --cors "*" && rasa run actions; else rasa shell -p 5006; fi'
